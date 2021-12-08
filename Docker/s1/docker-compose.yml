@@ -1,0 +1,12 @@
+version: '3'
+services:
+  node-web-app-s1:
+    build:
+      context: . #lấy tất cả thư mục để build image
+      dockerfile: dockerfile
+    container_name: node-web-app-s1
+    ports:
+      - "3000:3000"
+
+#docker-compose build - sau khi có thay đổi -> images none
+#docker-compose down -> xoá images none
