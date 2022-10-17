@@ -30,7 +30,7 @@ app.post('/login', (req, res)=>{
 
     //create jwt
     const accesstoken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {
-        expiresIn: '15s'
+        expiresIn: '16s'
     });
     res.json({accesstoken});
 });
